@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack Premium</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Blackjack Premium</h1>
+            
+        <div class="player-info">
+            <div>Solde: <span id="solde">1000</span>€</div>
+            <div>Mise: <span id="mise">10</span>€</div>
+        </div>
+            
+        <div id="message">Prêt à jouer</div>
+            
+        <h2>Croupier: <span id="points-croupier">?</span></h2>
+        <div id="cartes-croupier" class="cards-container"></div>
+           
+        <h2>Joueur: <span id="points-joueur">0</span></h2>
+        <div id="cartes-joueur" class="cards-container"></div>
+            
+        <div class="actions">
+            <button id="tirer">Tirer</button>
+            <button id="rester">Rester</button>
+            <button id="doubler">Doubler</button>
+            <button id="nouveau-jeu">Nouvelle Partie</button>
+        </div>
+            
+        <h3>Historique des parties</h3>
+        <div id="historique"></div>
+    </div>
+    <script src="blackjack.js"></script>
+</body>
+</html>
